@@ -1,0 +1,493 @@
+
+/*** Configurações CSS***/
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    max-width: none;
+    min-width: none;
+  }
+  
+  a, :visited, :hover, :active {
+    text-decoration: inherit;
+    color: inherit;
+  }
+  
+  body {
+    background-color: #0e0951;
+    height: 100%;
+  }
+  
+  
+  .principio {
+    color: #0e0951;
+    width: 3cm;
+    height: inherit;
+    font-size-adjust: inherit;
+    text-align: right;
+  }
+
+
+  .container {
+    padding: 0 50px;
+    margin: auto;
+    width: 100%;
+    box-sizing: border-box;
+    text-decoration-line: none;
+    
+    
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  @media (min-width: 992px) {
+    .container {
+      max-width: 960px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1140px;
+    }
+  }
+  
+  /*** MENU SUPERIOR ***/
+  #upMenu {
+    height: 70px;
+    width: 100%;
+    background-color: #10d0ee;
+    padding: 10px 50px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  #upMenu .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #upMenu .container img {
+    height: 30px;
+  }
+  
+  #upMenu .container ul {
+    display: flex;
+    color: #e6c3c3;
+  }
+  
+  #upMenu .container ul li {
+    padding: 0 10px;
+    cursor: pointer;
+  }
+  
+  #upMenu .container ul li:hover {
+    text-decoration: underline 3px solid;
+    text-decoration-color: #170348;
+    opacity: 0.8;
+  }
+  
+  #upMenu .container ul li:active {
+    text-decoration: underline wavy;
+    text-decoration-color:#170348 ;
+  }
+  
+  /*** Barra de search***/
+  #search {
+    display: flex;
+    align-items: center;
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 60px;
+  }
+  
+  #search .container {
+    display: contents;
+    align-content: center; 
+    margin-right: auto; 
+  }
+  
+  #search .container .search {
+    margin: 0 10px;
+    border-radius: 10px;
+    width: 40%;
+    padding: 2px 6px;
+    border-color: #10d0ee;
+  }
+  
+  #search .container button {
+    height: 35px;
+    width: 35px;
+    border: none;
+    background-color: #10d0ee;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid transparent;
+  }
+  
+  #search .container button svg {
+    width: 60%;
+    height: 60%;
+    fill:#FFFFFF;
+  }
+  
+  #search .container button:hover {
+    border-color:#10d0ee;
+    background-color: #FFFFFF;
+  }
+  
+  #search .container button:hover svg {
+    fill: #10d0ee;
+  }
+  
+  /*** Highlight Section***/
+  .highlight {
+    height: 300px;
+    display: flex;
+    margin-top: 40px;
+  
+   
+  }
+  
+  .highlight .highlightImage {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    position: relative;
+  }
+  
+  .highlight .highlightImage img {
+    width: 45%;
+    object-fit:cover;
+    object-position: 20% 10%;
+    height: 80%;
+    border-radius: 50px;
+  
+  
+    
+  
+  }
+  
+  .highlight .highlightImage .titleone {
+    background-color: #10d0ee;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: #ffffff;
+    height: 50px;
+    width: 250px;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50px;
+  }
+  
+  .highlight aside {
+    width: 400px;
+    box-sizing: border-box;
+    margin-left: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    box-shadow: 5px 5px 14px 1px rgba(0,0,0,0.3);
+  }
+  
+  .highlight aside header {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    color:#10d0ee;
+    margin-bottom: 20px;
+  }
+  .highlight aside p {
+    margin-bottom: 10px;
+  }
+  
+  /***Cruso***/
+  .cursoHeader {
+    text-align: center;
+    margin: 20px 0;
+    background-color: #10d0ee;
+    color: #FFFFFF;
+    padding: 10px 0;
+  }
+  
+  .cursoHeader h1 {
+    font-size: 20px;
+  }
+  
+  .cursoHeader h2 {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  
+  .cursoBody {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  
+  }
+  
+  .cursoBody .cursoCard {
+    height: 200px;
+    width: 350px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    display: flex;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 14px 1px rgba(0,0,0,0.3);
+  }
+  
+  .cursoBody .cursoCard .cursoImage {
+    width: 145px;
+    height: 200px;
+    border-radius: inherit;
+    overflow: hidden;
+  }
+  
+  .cursoBody .cursoCard .cursoImage img {
+    object-fit: cover;
+    height: inherit;
+    width: inherit;
+  }
+  
+  .cursoCard .cursoFavorite {
+    height: 20px;
+    width: 20px;
+    background-color:#10d0ee;
+    border-radius: 50%;
+    position: absolute;
+    border: 1px solid transparent;
+    margin: 8px;
+    cursor: pointer;
+  } 
+  
+  .cursoCard .cursoFavorite svg {
+    fill: #FFFFFF;
+    height: 60%;
+    width: 70%;
+  }
+  
+  .cursoCard .cursoFavorite:hover {
+    border-color: #10d0ee;
+    background-color: #FFFFFF;
+  }
+  
+  .cursoCard .cursoFavorite:hover svg {
+    fill:#10d0ee;
+  }
+  
+  .cursoBody .cursoCard .cursoInfo {
+    display: flex;
+    width: 205px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 12px;
+    box-sizing: border-box;
+  }
+  
+  .cursoInfo .cursoType {
+    font-size: 12px;
+    fill:#10d0ee;
+    color:#19b3d5;
+  }
+  
+  .cursoInfo h3 {
+    font-size: 16px;
+    font-weight: 700;
+    max-width: 90%;
+    max-height: 35px;
+    line-height: 18px;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    overflow: hidden;
+    margin: 10px;
+  }
+  
+  .cursoInfo .cursoAuthor {
+    display: inline;
+    font-size: 13px;
+    color: #10d0ee;
+    font-weight: 700;
+  }
+  
+  .cursoInfo .cursoAuthor span {
+    color: #10d0ee;
+    font-weight: 700;
+  }
+  
+  .cursoInfo .cursoFavorites {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    color: #170348;
+    font-size: 13px;
+  }
+  
+  .cursoInfo .cursoFavorites svg {
+    height: 18px;
+    width: 18px;
+    fill: #171ed8;
+    margin-right: 8px;
+  }
+  
+  .cursoInfo .cursoLink {
+    background-color: #1eb7ce;
+    color: #FFFFFF;
+    height: 16px;
+    width: 100%;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 2px solid transparent;
+    letter-spacing: 0.5px;
+  }
+  
+  .cursoInfo .cursoLink:hover {
+    border-color: #07424b;
+    background-color: #FFFFFF;
+    color: #10d0ee;
+  }
+  
+  /*** FOOTER ***/
+  footer {
+    background-color:#10d0ee;
+    min-height: 200px;
+    width: 100%;
+  }
+  
+  .footer {
+    display: flex;
+    padding-top: 25px;
+    justify-content: space-between;
+    color: #f1e7e7;
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  
+  .footer  h3 {
+    font-size: 21px;
+    margin-bottom: 15px;
+    color: black;
+  }
+  
+  .footer ul li:hover {
+    text-decoration: underline 3px solid;
+    text-decoration-color: #170348;
+    opacity: 0.8;
+  }
+  
+  .footer ul li:active {
+    text-decoration: underline wavy;
+    text-decoration-color: #170348;
+  }
+  
+  .infoSocialMedia {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .infoSocialMedia span {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0 15px;
+  }
+
+.Novo {
+  background-color: #05025d;
+  color: #FFFFFF;
+  height: 10px;
+  width: 50%;
+  border-radius: 15px;
+  text-align: end;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor:context-menu;
+  border: 5px solid transparent;
+  letter-spacing: 2px;
+}
+
+
+
+/**Form**/
+
+
+form {
+  margin-top: 15px;
+  font-weight: 300;
+  font-size: 15px;
+  text-align: left;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  font-weight: bolder;
+}
+
+form input,
+textarea {
+  color: #000;
+  font-weight: 500;
+  font-size: 15px;
+  border-radius: 3px;
+  border: none;
+  background: #ebf2fa;
+  opacity: 0.5;
+}
+
+form input {
+  height: 25px;
+}
+form label + input {
+  margin-bottom: 13px;
+}
+
+.btn {
+  width: 18%;
+  margin: 20px 0;
+  cursor: pointer;
+  background: #b9acce;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  color: #1c2481;
+  background: #542d93;
+}
+
+
+
+.parro {
+  margin: 15px;
+  font-size: 20px;
+
+}
+
+.formulario-exito {
+  font-size: 14px;
+  color: chartreuse;
+  display: none;
+}
+
+.formulario-exito-activo {
+  display: block;
+}
